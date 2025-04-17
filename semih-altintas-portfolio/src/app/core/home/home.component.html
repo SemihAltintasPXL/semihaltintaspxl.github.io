@@ -1,16 +1,26 @@
 <div class="min-h-screen bg-black text-white">
   
   <!-- Hero Sectie -->
-  <section id="home" class="flex flex-col items-center justify-center h-screen bg-red-800 text-white text-center">
-    <h2 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in">
-      Hallo, ik ben Semih!
-    </h2>
-    <p class="text-xl md:text-2xl mb-8 max-w-2xl">
-      Een gepassioneerde ontwikkelaar die geweldige webapplicaties bouwt.
-    </p>
-    <a href="#projecten" class="bg-red-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:bg-red-600 transition-transform transform hover:scale-105">
-      Bekijk Mijn Werk
-    </a>
+  <section id="home" class="flex flex-col md:flex-row items-center justify-between h-screen bg-gray-800 text-white px-8 md:px-16">
+    <div class="flex flex-col space-y-6 md:w-1/2">
+      <h2 class="text-3xl md:text-4xl font-bold text-red-500">
+        Hallo, ik ben Semih!
+      </h2>
+      <p class="text-2xl md:text-3xl font-semibold text-gray-300">
+        <span id="typewriter" class="border-r-2 border-red-500 pr-2"></span>
+      </p>
+      <p class="text-lg text-gray-400 max-w-md">
+        Een gepassioneerde ontwikkelaar die geweldige webapplicaties bouwt en geniet van gaming en no-code oplossingen.
+      </p>
+      <a href="assets/semih-altintas-cv.docx" download class="inline-block bg-red-500 text-white px-4 py-2 rounded-full font-bold text-base hover:bg-red-600 transition-transform transform hover:scale-105 mt-4">
+        Download CV
+      </a>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-700 rounded-full border-4 border-red-500 flex items-center justify-center">
+        <span class="text-gray-400 text-lg">Plaatshouder Afbeelding</span>
+      </div>
+    </div>
   </section>
 
   <!-- Vaardigheden Sectie -->
@@ -58,7 +68,7 @@
   <section id="projecten" class="py-16 px-4 bg-gray-900">
     <h3 class="text-4xl font-bold text-center mb-12 text-red-500">Mijn Grootste Projecten</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div *ngFor="let project of projects" class="bg-black p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform border-2 border-red-700">
+      <div *ngFor="let project of projecten" class="bg-black p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform border-2 border-red-700">
         <img [src]="project.image" class="w-full h-48 object-cover rounded-md mb-4">
         <h4 class="text-2xl font-bold mb-2 text-white">{{ project.title }}</h4>
         <p class="mb-4 text-gray-300">{{ project.description }}</p>

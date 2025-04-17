@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
     navItems = [
         { label: 'Home', path: '' },
-        { label: 'Over Mij', path: '#' },
+        { label: 'Over Mij', path: 'about-me' },
         { label: 'Seminaries', path: '#' }
     ];
 }
