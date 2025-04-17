@@ -12,6 +12,6 @@ export class NavbarComponent {
     navItems = [
         { label: 'Home', path: '' },
         { label: 'Over Mij', path: 'about-me' },
-        { label: 'Seminaries', path: '#' }
+        { label: 'Seminaries', path: 'seminaries' }
     ];
 }
