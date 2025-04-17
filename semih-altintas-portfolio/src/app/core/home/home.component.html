@@ -1,73 +1,101 @@
-<div class="min-h-screen bg-gray-100 text-gray-800">
+<div class="min-h-screen bg-black text-white">
   
-    <!-- Hero Section -->
-    <section id="home" class="flex flex-col items-center justify-center h-screen bg-indigo-500 text-white text-center">
-      <h2 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in">
-        Hello, I'm Semih!
-      </h2>
-      <p class="text-xl md:text-2xl mb-8 max-w-2xl">
-        A passionate developer building awesome web applications.
-      </p>
-      <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-bold text-lg hover:bg-yellow-500 transition-transform transform hover:scale-105">
-        View My Work
-      </a>
-    </section>
-  
-    <!-- About Section -->
-    <section id="about" class="py-16 px-4 bg-white">
-      <h3 class="text-4xl font-bold text-center mb-12">About Me</h3>
-      <div class="max-w-4xl mx-auto text-center">
-        <p class="text-lg mb-4">
-          Hi! I'm Semih, a software developer with a passion for creating impactful and user-friendly web applications. I specialize in front-end development and love working with technologies like Angular, React, and Tailwind CSS.
-        </p>
-        <p class="text-lg">
-          When I'm not coding, you can find me exploring new tech trends or contributing to open-source projects on GitHub.
-        </p>
-      </div>
-    </section>
-  
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 px-4 bg-gray-100">
-      <h3 class="text-4xl font-bold text-center mb-12">My biggest projects</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <div *ngFor="let project of projects" class="bg-white p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform">
-          <img [src]="project.image" class="w-full h-48 object-cover rounded-md mb-4" alt="Project">
-          <h4 class="text-2xl font-bold mb-2">{{ project.title }}</h4>
-          <p class="mb-4">{{ project.description }}</p>
-          <a [href]="project.githubLink" class="inline-block bg-yellow-400 text-black px-4 py-2 rounded-full font-bold text-lg hover:bg-yellow-500 transition-transform transform hover:scale-105">
-            Insane
-          </a>
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col items-center justify-center h-screen bg-red-800 text-white text-center">
+    <h2 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in">
+      Hello, I'm Semih!
+    </h2>
+    <p class="text-xl md:text-2xl mb-8 max-w-2xl">
+      A passionate developer building awesome web applications.
+    </p>
+    <a href="#projects" class="bg-red-500 text-white px-6 py-3 rounded-full font-bold text-lg hover:bg-red-600 transition-transform transform hover:scale-105">
+      View My Work
+    </a>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-4 bg-black">
+    <h3 class="text-4xl font-bold text-center mb-12 text-red-500">Mijn Vaardigheden</h3>
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">Java</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">PHP</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">C#</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">MySQL</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">Python</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">Angular</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">Docker</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center transform hover:scale-105 transition-transform border-2 border-red-700 hover:shadow-[0_0_15px_5px_rgba(239,68,68,0.7)]">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="w-16 h-16 mb-4">
+          <p class="text-lg font-semibold text-white">Vue.js</p>
         </div>
       </div>
-    </section>
-  
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 bg-white">
-      <h3 class="text-4xl font-bold text-center mb-12">Get in Touch</h3>
-      <div class="max-w-2xl mx-auto text-center">
-        <p class="text-lg mb-4">Have a project in mind or just want to say hi? Feel free to reach out!</p>
-        <div class="flex justify-center space-x-4">
-          <a href="mailto:semih-altintas@hotmail.com" class="bg-blue-500 text-white p-4 rounded-lg hover:bg-blue-600 transition-transform transform hover:scale-105">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 12.713l11.99-7.91A2 2 0 0022 3H2a2 2 0 00-1.99 1.803L12 12.713zM12 14.287L0 6.376V19a2 2 0 002 2h20a2 2 0 002-2V6.376l-12 7.911z"/>
-            </svg>
-          </a>
-          <a href="https://github.com/SemihAltintasPXL" class="bg-gray-800 text-white p-4 rounded-lg hover:bg-gray-900 transition-transform transform hover:scale-105">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.729.082-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.998.108-.775.418-1.304.76-1.605-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.467-2.381 1.235-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02-.005 2.047.138 3.006.404 2.29-1.553 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/semih-altintas/" class="bg-blue-700 text-white p-4 rounded-lg hover:bg-blue-800 transition-transform transform hover:scale-105">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM8 19H5v-9h3v9zm-1.5-10.5c-.966 0-1.75-.784-1.75-1.75S5.534 5 6.5 5s1.75.784 1.75 1.75S7.466 8.5 6.5 8.5zM19 19h-3v-4.5c0-1.378-.672-2.5-1.5-2.5s-1.5 1.122-1.5 2.5V19h-3v-9h3v1.122c.672-.84 1.668-1.622 3-1.622 2.484 0 4.5 2.239 4.5 5V19z"/>
-            </svg>
-          </a>
-        </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4 bg-gray-900">
+    <h3 class="text-4xl font-bold text-center mb-12 text-red-500">My biggest projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div *ngFor="let project of projects" class="bg-black p-6 rounded-lg shadow-md transform hover:scale-105 transition-transform border-2 border-red-700">
+        <img [src]="project.image" class="w-full h-48 object-cover rounded-md mb-4">
+        <h4 class="text-2xl font-bold mb-2 text-white">{{ project.title }}</h4>
+        <p class="mb-4 text-gray-300">{{ project.description }}</p>
+        <a [href]="project.githubLink" class="inline-block bg-red-500 text-white px-4 py-2 rounded-full font-bold text-lg hover:bg-red-600 transition-transform transform hover:scale-105">
+          View More
+        </a>
       </div>
-    </section>
-  
-    <!-- Footer -->
-    <footer class="p-4 text-center bg-indigo-600 text-white">
-      <p>© 2025 Semih. All rights reserved. Built with Angular.</p>
-    </footer>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-4 bg-black">
+    <h3 class="text-4xl font-bold text-center mb-12 text-red-500">Get in Touch</h3>
+    <div class="max-w-2xl mx-auto text-center">
+      <p class="text-lg mb-4 text-gray-300">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+      <div class="flex justify-center space-x-4">
+        <a href="mailto:semih-altintas@hotmail.com" class="bg-red-700 text-white p-4 rounded-lg hover:bg-red-800 transition-transform transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12.713l11.99-7.91A2 2 0 0022 3H2a2 2 0 00-1.99 1.803L12 12.713zM12 14.287L0 6.376V19a2 2 0 002 2h20a2 2 0 002-2V6.376l-12 7.911z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/SemihAltintasPXL" class="bg-gray-800 text-white p-4 rounded-lg hover:bg-gray-900 transition-transform transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.613-4.042-1.613-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.082-.729.082-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.998.108-.775.418-1.304.76-1.605-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.467-2.381 1.235-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02-.005 2.047.138 3.006.404 2.29-1.553 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/semih-altintas/" class="bg-red-700 text-white p-4 rounded-lg hover:bg-red-800 transition-transform transform hover:scale-105">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0H5C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM8 19H5v-9h3v9zm-1.5-10.5c-.966 0-1.75-.784-1.75-1.75S5.534 5 6.5 5s1.75.784 1.75 1.75S7.466 8.5 6.5 8.5zM19 19h-3v-4.5c0-1.378-.672-2.5-1.5-2.5s-1.5 1.122-1.5 2.5V19h-3v-9h3v1.122c.672-.84 1.668-1.622 3-1.622 2.484 0 4.5 2.239 4.5 5V19z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center bg-red-800 text-white">
+    <p>© 2025 Semih. All rights reserved. Built with Angular.</p>
+  </footer>
 </div>

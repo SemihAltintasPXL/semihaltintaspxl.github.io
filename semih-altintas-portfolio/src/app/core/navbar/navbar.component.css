@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #1f2937;
+    background-color: #000000;
     padding: 1rem;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .nav-link:hover {
-    color: #93c5fd;
+    color: #ef4444;
 }
 
 .underline {
@@ -37,7 +37,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #3b82f6;
+    background-color: #ef4444;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease-out;
